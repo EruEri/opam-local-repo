@@ -8,8 +8,8 @@ maintainer: ["EruEri <ndiayeyves@gmail.com>"]
 authors: ["EruEri <ndiayeyves@gmail.com>"]
 license: "GPL-3.0-or-later"
 tags: ["encryption"]
-homepage: "https://github.com/EruEri/oangou"
-bug-reports: "https://github.com/EruEri/oangou/issues"
+homepage: "https://codeberg.org/EruEri/oangou"
+bug-reports: "https://codeberg.org/EruEri/oangou/issues"
 depends: [
   "ocaml" {>= "4.14.0"}
   "dune" {>= "3.10"}
@@ -35,10 +35,10 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/EruEri/oangou.git"
+dev-repo: "git+https://codeberg.org/EruEri/oangou.git"
 
 url {
-  src: "https://github.com/EruEri/oangou/archive/refs/tags/0.1.0-1.tar.gz"
+  src: "https://codeberg.org/EruEri/oangou/releases/download/0.1.0-1/oangou-0.1.0-1.tar.gz"
   checksum: [
     "sha256=2804abfd9b22381f43e886c29ef0e25903a860dc208bd2ec192a9498f5273968"
     "sha512=0da4566f14283ca1e46497d8e0c50f0c4ae77da47d9b8d28a3f5994e178b5e5d6e24edb734847eb183f4f787cb747e56487f9d360ff820a42242c34f0e6e211b"
