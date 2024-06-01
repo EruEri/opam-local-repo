@@ -6,13 +6,13 @@ maintainer: ["EruEri"]
 authors: ["EruEri"]
 license: "GPL-3.0"
 tags: ["password-manager" "cli"]
-homepage: "https://github.com/EruEri/ocithare"
-bug-reports: "https://github.com/EruEri/ocithare/issues"
+homepage: "https://codeberg.org/EruEri/ocithare"
+bug-reports: "https://codeberg.org/EruEri/ocithare/issues"
 depends: [
   "dune" {>= "3.10"}
   "xdg"
   "dune-build-info"
-  "ocaml" {>= "4.13.0"}
+  "ocaml" {>= "4.14.0"}
   "cryptokit" {>= "1.17"}
   "ppx_deriving_yojson" {>= "3.5.3"}
   "yojson" {>= "2.0.0"}
@@ -34,10 +34,10 @@ build: [
   ]
 ]
 url {
-  src: "https://github.com/EruEri/ocithare/archive/refs/tags/0.11.0-1.tar.gz"
+  src: "https://codeberg.org/EruEri/ocithare/releases/download/0.11.0-1/ocithare-0.11.0-1.tar.gz"
   checksum: [
     "sha256=f1cbc7b4d4f1bf80722d76b0b8ef7a50f49884c0da0fc35fbbed634382d4a700"
     "sha512=7036e93b184384bc6f4c650cb143552d09320b7950ef13646918216572c05ad0907e4224d76cbd092a0032721eee693155acccc6941e52fd67e0909415370ee9"
   ]
 }
-dev-repo: "git+https://github.com/EruEri/ocithare.git"
+dev-repo: "git+https://codeberg.org/EruEri/ocithare.git"
