@@ -6,8 +6,8 @@ maintainer: ["EruEri"]
 authors: ["EruEri"]
 license: "GPL-3.0-or-later"
 tags: ["comics-reader" "comics-collection" "commandline"]
-homepage: "https://github.com/EruEri/oyomu"
-bug-reports: "https://github.com/EruEri/oyomu/issues"
+homepage: "https://codeberg.org/EruEri/oyomu"
+bug-reports: "https://codeberg.org/EruEri/oyomu/issues"
 depends: [
   "dune" {>= "3.2"}
   "dune-configurator"
@@ -34,10 +34,10 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/EruEri/oyomu.git"
+dev-repo: "git+https://codeberg.org/EruEri/oyomu.git"
 
 url {
-  src: "https://github.com/EruEri/oyomu/archive/refs/tags/v0.3.1.tar.gz"
+  src: "https://codeberg.org/EruEri/oyomu/releases/download/v0.3.1/oyomu-0.3.1.tar.gz"
   checksum: [
     "sha256=e0a0fca19fb71b1339eacb24f8ccf505af69e7cb6d279ba657fcaba633784372"
     "sha512=cee051efc59b0e184268288f8e6a32fabc5cd7331cea0666fb5ca1f7b031ebde8ef3e50d28d7d480703a0b1cb735330443ad981aedd8a1d4d3715a2a9dd56564"
