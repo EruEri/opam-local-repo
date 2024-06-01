@@ -6,8 +6,8 @@ maintainer: ["EruEri"]
 authors: ["EruEri"]
 license: "GPL-3.0-or-later"
 tags: ["file-manager" "encryption"]
-homepage: "https://github.com/EruEri/hisoka"
-bug-reports: "https://github.com/EruEri/hisoka/issues"
+homepage: "https://codeberg.org/EruEri/hisoka"
+bug-reports: "https://codeberg.org/EruEri/hisoka/issues"
 depends: [
   "ocaml" {>= "4.14"}
   "dune" {>= "3.2"}
@@ -31,12 +31,12 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/EruEri/hisoka.git"
+dev-repo: "git+https://codeberg.org/EruEri/hisoka.git"
 
 url {
-  src: "https://github.com/EruEri/hisoka/archive/refs/tags/0.3.0.tar.gz"
+  src: "https://codeberg.org/EruEri/hisoka/archive/0.3.0.tar.gz"
   checksum: [
-    "sha256=fee033659295556a645176bab4dc71a4bb24952d237c6836ce020dd6abde31b7"
-    "sha512=e1e7b47f81d91fa92e849df034d56fea1a657e6caaac0431392ea410cc08049a6a8feac6439b80687b4c610990b8ee1f79e2e3cd3472f6d8035b73de1986f1aa"
+    "sha256=83eb797512bdb4faebf3d21de76c2c1044056602a1538eac9375895da3fa1670"
+    "sha512=9f5c9f024e24d8f2ca0cf8a753cda8f04bc056fd61963cb8a070adc9841b5a95e98af92341cfa59f53e0677c6c8bb770ae0e74d1665d2589a93645f0f59a7fea"
   ]
 }
