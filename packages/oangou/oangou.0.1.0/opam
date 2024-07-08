@@ -18,7 +18,7 @@ depends: [
   "ppx_deriving_yojson" {>= "3.5.3"}
   "yojson" {>= "2.0.0"}
   "cmdliner" {>= "1.1.0"}
-  "mirage-crypto-ec"
+  "mirage-crypto-ec" {< "1.0.0"}
   "odoc" {with-doc}
 ]
 build: [
