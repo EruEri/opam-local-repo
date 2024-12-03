@@ -1,0 +1,47 @@
+opam-version: "2.0"
+version: "0.5.0"
+synopsis: "A command line comic reader and collection manager"
+maintainer: ["EruEri"]
+authors: ["EruEri"]
+license: "GPL-3.0-or-later"
+tags: ["comics-reader" "comics-collection" "commandline"]
+homepage: "https://codeberg.org/EruEri/oyomu"
+bug-reports: "https://codeberg.org/EruEri/oyomu/issues"
+depends: [
+  "dune" {>= "3.2"}
+  "dune-configurator"
+  "xdg"
+  "ocaml" {>= "4.14.0"}
+  "oepub" {>= "0.1.0"}
+  "camlzip" {>= "1.11"}
+  "ppx_deriving_yojson" {>= "3.5.3"}
+  "yojson" {>= "2.0.0"}
+  "cmdliner" {>= "1.1.0"}
+  "re" {>= "1.10.3"}
+  "mirage-crypto" {>= "1.0.0"}
+  "digestif" {>= "1.0.0"}
+  "odoc" {with-doc}
+]
+build: [
+  ["dune" "subst"] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+]
+dev-repo: "git+https://codeberg.org/EruEri/oyomu.git"
+
+url {
+  src: "https://codeberg.org/EruEri/oyomu/archive/v0.5.0.tar.gz"
+  checksum: [
+    "sha256=f8a9fb333d08f583672c62fc9764ee8d64592853256093e73da26efa5bc9ec7b"
+    "sha512=a361751b84e0af8d831a67e888fe6183a6c2156e767f0ba7b03b375fd073453308f1081dc02ea5d2eea5778d7d407ade5525b44406d1500de3f59ebe27401561"
+  ]
+}
